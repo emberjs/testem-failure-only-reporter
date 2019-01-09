@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Testem reporter that only reports failures",
   "main": "failure-only-reporter.js",
-  "scripts": {
-  },
+  "scripts": {},
   "license": "MIT",
   "dependencies": {
     "testem": "^2.9.2"
