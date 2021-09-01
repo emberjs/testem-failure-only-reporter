@@ -2,10 +2,36 @@
   "name": "testem-failure-only-reporter",
   "version": "0.0.1",
   "description": "Testem reporter that only reports failures",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:emberjs/testem-failure-only-reporter.git"
+  },
+  "license": "MIT",
   "main": "failure-only-reporter.js",
   "scripts": {},
-  "license": "MIT",
   "dependencies": {
     "testem": "^3.0.0"
+  },
+  "devDependencies": {
+    "release-it": "^14.2.1",
+    "release-it-lerna-changelog": "^3.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": true
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    }
   }
 }
