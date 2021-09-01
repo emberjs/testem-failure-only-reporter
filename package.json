@@ -1,6 +1,6 @@
 {
   "name": "testem-failure-only-reporter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Testem reporter that only reports failures",
   "repository": {
     "type": "git",
