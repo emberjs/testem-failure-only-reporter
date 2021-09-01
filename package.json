@@ -6,6 +6,6 @@
   "scripts": {},
   "license": "MIT",
   "dependencies": {
-    "testem": "^2.9.2"
+    "testem": "^3.0.0"
   }
 }
